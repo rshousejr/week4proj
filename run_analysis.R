@@ -55,6 +55,7 @@ mergedTrainingTest = rbind(trainingData,testData)
 colNames  = colnames(mergedTrainingTest) 
 
 # 2. Extract mean and standard deviation for each measurement. 
+# Meanwhile I made this first change locally and committed
 
 # Make vector that contains TRUE for the ID, mean() & stddev() columns so subsequent statements can select just those values
 meanAndStddevVectors = (grepl("activity..",colNames) | grepl("subject..",colNames) | grepl("-mean..",colNames) & !grepl("-meanFreq..",colNames) & !grepl("mean..-",colNames) | grepl("-std..",colNames) & !grepl("-std()..-",colNames))

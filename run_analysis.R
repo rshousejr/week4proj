@@ -42,7 +42,7 @@ colnames(subjectTest) = "subjectId"
 colnames(yTest)       = "activityId"
 colnames(xTest)       = features[,2] 
 
-
+# Made second local change
 # Merge the xTest, yTest and subjectTest data
 testData = cbind(yTest,subjectTest,xTest)
 

@@ -87,6 +87,7 @@ for (i in 1:length(colNames))
 }
 
 # Add column names to the mergedTrainingTest
+# I added this comment line on the origin master while someone else was making changes to same file in their local master - let's see what happens
 colnames(mergedTrainingTest) = colNames
 
 # 5. Create the final, tidy data set 
